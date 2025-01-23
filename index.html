@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC Video Call - Controls Added</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Video Call</h1>
+    <div class="all">
+      <div id="video-container">
+        <video id="localVideo" autoplay playsinline muted></video>
+        <video id="remoteVideo" autoplay playsinline></video>
+      </div>
+      <div id="controls-container">
+        <textarea
+          id="offer"
+          placeholder="Copy and paste Offer/Answer here..."
+          rows="8"
+        ></textarea>
+      </div>
+      <br />
+      <div id="offerButtons">
+        <button id="offerBtn" onclick="handleOfferAction()">
+          Connect to...
+        </button>
+        <!-- </div>
+    <div> -->
+        <button id="toggleVideo" onclick="toggleVideo()">Video: On</button>
+        <button id="toggleMic" onclick="toggleMic()">Mic: On</button>
+        <button id="copyButton" onclick="copyOffer()">Copy</button>
+      </div>
+      <div id="errorLog" style="color: red; margin-top: 10px"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
