@@ -109,6 +109,7 @@ button:active {
   }
   .all {
     height: 100%;
+    width:90%
   }
 
   video {
